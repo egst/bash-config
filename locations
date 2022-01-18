@@ -1,0 +1,14 @@
+#!/bin/bash
+
+foo=bar
+
+export egst=$egst
+export eghe=$egst/eghe
+export personal=$eghe/personal
+export work=$eghe/work
+export school=$eghe/school
+export downloads=$eghe/downloads
+export desktop=$eghe/desktop
+export www=/var/www
+export sites=/etc/nginx/sites-available
+export sites_enabled=/etc/nginx/sites-enabled
