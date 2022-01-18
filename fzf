@@ -1,0 +1,13 @@
+#!/bin/bash
+
+_fzf_compgen_path() {
+    fdfind --hidden --follow --exclude ".git" . "$1"
+}
+
+# Use fd to generate the list for directory completion
+_fzf_compgen_dir() {
+    fdfind --type d --hidden --follow --exclude ".git" . "$1"
+}
+
+source /usr/share/doc/fzf/examples/key-bindings.bash
+source /usr/share/doc/fzf/examples/completion.bash

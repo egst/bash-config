@@ -1,7 +1,5 @@
 #!/bin/bash
 
-foo=bar
-
 export egst=$egst
 export eghe=$egst/eghe
 export personal=$eghe/personal
