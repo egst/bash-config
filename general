@@ -1,15 +1,18 @@
 #!/bin/bash
 
-set -o vi # Vi mode.
+# Vi mode:
+set -o vi
 
+# History:
 bind '"\C-p":history-search-backward'
 bind '"\C-n":history-search-forward'
 
-export PATH="$PATH:/opt/nvim-linux64/bin"
-
 export EDITOR=nvim
 
-export DENO_INSTALL="/home/maximilian/.deno"
-export PATH="$DENO_INSTALL/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 
+# TODO: Cleanup.
+#export PATH="$PATH:/opt/nvim-linux64/bin"
+#export DENO_INSTALL="/home/maximilian/.deno"
+#export PATH="$DENO_INSTALL/bin:$PATH"
 #export ONE_CUSTOM_REPO=/home/maximilian/Workspace/custom
